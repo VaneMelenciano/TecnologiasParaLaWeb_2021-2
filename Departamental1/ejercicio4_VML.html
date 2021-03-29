@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - Formularios</title>
+</head>
+<body style="background-color:#956769;">
+    <header>
+        <nav></nav>
+    </header>
+
+    <main>
+        <section>
+            <form action = "guarda.php" method = "POST"> <!--action es el url, donde se gusrda la informacion--> 
+            <!--POST = Los datos de ls campos van ocultos-->
+            <!-- GET = Los datos de los campos van en la URL-->
+            <!--
+                POST
+                    universidad=IPN
+                    instituto=UPIIZ
+                    rama=1
+                    grado=3
+                    estatus=1
+                    promedio=8
+                    experiencia=3
+                GET
+                    ?universidad=IPN&instituto=UPIIZ&rama=1&grado=3&estatus=1&promedio=8&experiencia=3
+            -->
+
+            <!--
+                name= para identificar los campos que se mandan, la informacion que se manda a otra pagina
+                id=para trabajar con los campos de manera local, en la misma pagina
+            -->
+
+                <fieldset> <!--recuadro al rededor-->
+                    <legend>Detalles de Registros</legend>
+
+                    <table align="center"> <!--el formulario dentro de una tabla para dar forma-->
+                        <tr>
+                            <td><label for="universidad">Universidad: </label> <!--etiqueta--></td>
+                            <td><input type="text" id="universidad" name="universidad"> <!--campos para poder enviar la informacion--> </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="instituto"> Instituto: </label> <!--etiqueta--></td>
+                            <td><input type="text" id="instituto" name="instituto"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="rama">Rama</label></td>
+                            <td>
+                                <select id="rama" name="rama"> <!--para seleccionar una respuesta deplegando-->
+                                    <option value="1">Fisico Matemático</option>
+                                    <option value="2">Quimico Biológico</option>
+                                    <option value="3">Ciencias sociales</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="grado">Grado</label></td>
+                            <td>
+                                <select id="grado" name="grado"> <!--para seleccionar una respuesta deplegando-->
+                                    <option value="1">Doctorado</option>
+                                    <option value="2">Maestria</option>
+                                    <option value="3">Especialidad</option>
+                                    <option value="4">Licenciatura</option>
+                                    <option value=5>Medio superior</option>
+                                </select>
+                                <input type="radio" id=estatus name="estatus" value="1"><label>En proceso</label> <!--tipos de entradas para seleccionar con circulitos :), radio: una sola opcion-->
+                                <input type="radio" id=estatus name="estatus" value="2"><label>Terminado</label> <!-- su id y name debe ser igual para solo seleccionar una, el value es lo diferente-->
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="promedio">Promedio: </label></td>
+                            <td><input type="number" id="promedio" name="promedio">
+                            <label for="semestre">Semestre</label>
+                            <input type="number" id="semestre" name="semestre"></td>
+                        </tr>
+
+                        <tr> <!--filas/renglones/horizontal-->
+                            <td><label for="experiencia">Experiencia</label></td>
+                            <td><input type="number" id="experiencia" name="experiencia"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="sitioweb">Sitio web</label></td>
+                            <td><input type="url" id="sitioweb" name="sitioweb" value="http://"></td>
+                        </tr>
+                        <tr><br></tr>
+                        <tr>
+                            <tr></tr>
+                            <td><input type="submit" id="enviar" name="enviar" value="Enviar formulario"></td>
+                            <td><input type="reset" id="limpiar" name="limpiar" value="Limpiar campo"></td> <!--submit es para limpiar, reset borrar lo que se tiene-->
+                        </tr>
+
+                    </table>
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
