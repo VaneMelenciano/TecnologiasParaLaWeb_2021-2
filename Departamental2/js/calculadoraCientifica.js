@@ -10,7 +10,6 @@ function clickDigito(digito){
     var display = document.getElementById("display");
     if(digito=='='){
         parentesis();
-        alert(Texto);
         Texto = eval(Texto);
         display.value= Texto;
         
