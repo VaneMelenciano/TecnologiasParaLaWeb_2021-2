@@ -1,0 +1,134 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    margin: 10px;
+}
+.boton{
+    text-decoration: none;
+    padding-top: 9px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 9px;
+    border-radius: 3px;
+    color: #ffffff;
+    border-style: solid;
+    border-width: 0px;
+    font-size: 13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.boton-primario{
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.boton-secundario{
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+.boton-default{
+    background-color: rgb(248, 249, 250);
+    border-color: rgb(221, 221, 221);
+    color: #000000;
+}
+.boton-seccess{
+    background-color: rgb(41, 168, 71);
+    border-color: #28a745;
+}
+.boton-info{
+    background-color: rgb(23, 162, 184);
+    border-color: #17a2b8;
+}
+.boton-danger{
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.boton-warning{
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+/*Para cambiar el color al poner el cursor en el boton*/
+.boton-default:hover{
+    background-color: rgba(233,236,239,0.8);
+}
+.boton-primario:hover{
+    background-color: rgba(48,100,215);
+}
+.boton-secundario:hover{
+    background-color: rgba(109,117,125,0.8);
+}
+.boton-seccess:hover{
+    background-color: rgb(25, 134, 51);;
+}
+.boton-info:hover{
+    background-color: rgb(14, 126, 143);
+}
+.boton-warning:hover{
+    background-color: #c2950f;
+}
+.boton-danger:hover{
+    background-color: rgb(187, 40, 55);
+}
+
+h4{
+    /*line-height: 3.5;*/
+    margin-bottom: 10px;
+}
+
+/*Mensjaes*/
+.div-general{
+    width: 50%;
+    margin-top: 20px;
+    border-width: solid;
+    border-color: 1px;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+}
+.div-default{
+    background-color: rgb(207, 209, 211);
+    border-style: rgb(207, 209, 211);
+}
+.div-primary{
+    background-color: #007bff;
+    border-style: #007bff;
+}
+.div-secundary{
+    background-color: #6c757d;
+    border-style: #6c757d;
+}
+.div-success{
+    background-color: #28a745;
+    border-style: #28a745;
+}
+.div-info{
+    background-color: #17a2b8;
+    border-style: #17a2b8;
+}
+.div-danger{
+    background-color: #dc3545;
+    border-style: #dc3545;
+}
+
+.div-warning{
+    background-color: #ffc107;
+    border-style: #ffc107;
+}
+
+
+/*Variante con fondo blanco*/
+.div-rojo{
+    /*display: none;*/
+    width: 50%;
+    margin-top: 20px;
+    border-width: solid;
+    border-color: 1px;
+    color: #000000;
+    border-radius: 5px;
+    padding: 10px;
+    border-left-color: #dc3545;
+    border-left-width: 5px;
+}
